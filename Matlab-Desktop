@@ -1,0 +1,20 @@
+# Enter to the applications
+
+cd /usr/share/applications
+
+# Make Matlab.desktop shortcut
+
+sudo gedit Matlab.desktop
+
+# Copy this into Matlab.desktop
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=Matlab 2017b
+Comment=Matlab 2017b
+Exec=/usr/local/MATLAB/R2017b/bin/matlab
+Icon=/usr/local/MATLAB/R2017b/toolbox/shared/dastudio/resources/MatlabIcon.png
+Terminal=true
+StartupNotify=true
+Type=Application
+Categories=Application;
