@@ -12,5 +12,6 @@ cd ../../../cefclient/sys/os/glnxa64/
 mkdir bak
 mv * bak
 mv bak/libcef.so ./
+sudo apt-get install libcanberra-gtk-module libcanberra-gtk3-module libgconf2-4
 
 Finish :)
