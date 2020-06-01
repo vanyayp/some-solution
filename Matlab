@@ -1,15 +1,14 @@
 Simulink Solution
 ==============================
 	
-Go to matlab root folder (/usr/local/MATLAB/R2017b/)
+cd /usr/local/MATLAB/R2017b/
 cd bin/glnxa64/
-mkdir exlude
+mkdir exclude
 mv libfreetype* exclude/
 cd ../../sys/os/glnxa64/
 mkdir exclude
 mv libstdc++.sp.6* exclude/
-Go to matlab root folder
-cd cefclient/sys/os/glnxa64/
+cd ../../../cefclient/sys/os/glnxa64/
 mkdir bak
 mv * bak
 mv bak/libcef.so ./
