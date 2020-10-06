@@ -1,0 +1,26 @@
+Tip 1:
+
+rfkill list all
+sudo rfkill unblock wifi
+
+Tip 2:
+
+sudo dhcpd -4
+
+Tip 3 :
+
+I fixed this problemo on my freshly installed Raspbian Buster with one WIERD trick :twisted: it worked like a CHARM :mrgreen:
+Code: Select all
+
+cd ../../..
+sudo mv /etc/wpa_supplicant/wpa_supplicant.conf.original /etc/wpa_supplicant/wpa_supplicant.conf
+What I did next with this one extra step was not at all excruciating :twisted:
+Code: Select all
+
+ 'sudo raspi-config" 
+
+Under localisation, change WLAN country to your location
+
+Tip 4 :
+
+Setting my locale to en us utf8 resolved this issue.
