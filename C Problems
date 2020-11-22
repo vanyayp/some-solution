@@ -6,3 +6,7 @@ scanf("%*[^\n\r]")
 
 #include <stdbool.h>
 #define typeof(x, type) _Generic(x, type: 1, default: 0)
+
+# to buff string
+char buff[100];
+scanf("%[^\n]%*c", buff); or scanf("%[^\n]s");
