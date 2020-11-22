@@ -1,0 +1,8 @@
+# to avoid loop while check typeof data in scanf (thanks to Ed Heal on https://stackoverflow.com/questions/58434411/how-to-fix-infinite-loops-when-user-enters-wrong-data-type-in-scanf)
+
+scanf("%*[^\n\r]")
+
+# to check typeof variable
+
+#include <stdbool.h>
+#define typeof(x, type) _Generic(x, type: 1, default: 0)
