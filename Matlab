@@ -7,7 +7,7 @@ mkdir exclude
 mv libfreetype* exclude/
 cd ../../sys/os/glnxa64/
 mkdir exclude
-mv libstdc++.sp.6* exclude/
+mv libstdc++.so.6* exclude/
 cd ../../../cefclient/sys/os/glnxa64/
 mkdir bak
 mv * bak
